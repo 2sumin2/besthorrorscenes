@@ -1,5 +1,6 @@
 @import "_variables";
 @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 
 * {
@@ -88,6 +89,40 @@ header {
 
 main {
   height: 5000vh;
-  background-color: $red;
-  padding-left: $fixedWidth;
+
+  .movie {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)) $red;
+    padding-left: $fixedWidth;
+
+    .movie_header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      align-items: flex-end;
+      color: white;
+
+      h4 {
+        font-size: 60px;
+        font-weight: 500;
+        font-family: 'Oswald', sans-serif;
+        ;
+      }
+
+      h5 {
+        font-size: 18px;
+        font-weight: 600;
+        ;
+      }
+    }
+  }
 }
