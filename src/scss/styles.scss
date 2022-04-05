@@ -1,3 +1,93 @@
+@import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: yellow;
+  background: $red;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  position: fixed;
+  background-color: $white;
+  width: 33%;
+  height: 100%;
+  padding: 95px 0 50px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    color: $red;
+    font-size: 70px;
+    width: 50%;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    ;
+  }
+
+  h3 {
+    color: $red;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  p {
+    color: $red;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+
+  }
+
+  h3,
+  h4,
+  p {
+    margin-bottom: 25px;
+    width: 70%;
+    line-height: 120%;
+  }
+
+  nav {
+    margin-bottom: 25px;
+
+    ul {
+
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+
+      li {
+        margin: 0 10px 5px 0;
+        font-size: 15px;
+        opacity: 0.6;
+        border-bottom: 1px solid;
+        line-height: 120%;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  h4 {
+    font-size: 12px;
+    opacity: 0.5;
+    font-weight: 600;
+  }
+}
+
+main {
+  height: 5000vh;
+  background-color: $red;
+  padding-left: $fixedWidth;
 }
